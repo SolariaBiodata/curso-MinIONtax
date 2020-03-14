@@ -90,6 +90,7 @@ Realizaremos un análisis taxonómico utilizando el software de Qiime2
     ~~~
     nano manifest.csv
     ~~~
+    
       |sample-id|absolute-filepath|direction  |
       |---------|-----------------|-----------|
       |SAMPLE_A |$PWD/raw/samplA.fastq|forward|
@@ -124,9 +125,9 @@ Realizaremos un análisis taxonómico utilizando el software de Qiime2
     ~~~
     ~~~
     qiime feature-table filter-seqs \
-    --i-table derep/dereplicated_sequences.qza \
+    --i-data derep/dereplicated_sequences.qza \
     --m-metadata-file chimeras/nonchimeras.qza \
-    --o-filtered-table filtered-seqs.qza
+    --o-filtered-data filtered-seqs.qza
     ~~~
 6. Clusterización: El proceso implica agrupar tantas secuencias se parezcan entre sí.
     ~~~
