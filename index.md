@@ -138,7 +138,7 @@ Realizaremos un análisis taxonómico utilizando el software de Qiime2
     qiime vsearch cluster-features-open-reference \
     --i-table filtered-table.qza \
     --i-sequences filtered-seqs.qza \
-    --i-reference-sequences chimeras/chimeras.qza \
+    --i-reference-sequences chimeras/nonchimeras.qza \
     --p-perc-identity 0.80 \
     --output-dir clustered
     ~~~
