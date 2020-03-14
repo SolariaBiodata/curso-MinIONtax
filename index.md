@@ -74,11 +74,13 @@ Realizaremos un análisis taxonómico utilizando el software de Qiime2
     nano metadata.tsv
     ~~~
     La tabla puede ser parecido a esto:
-    | #SampleID | BarcodeSequence | Treatment   | Group       | Year    | Concentration |
-    |-----------|-----------------|-------------|-------------|---------|---------------|
-    | #q2:types | categorical     | categorical | categorical | numeric | numeric       |
-    | SAMPLE_A  | CAGTGTCA        | Cont_A      | Control     | 2010    | 20.0          |
-    | SAMPLE_B  | CATTGTCA        | Cont_A      | Experiment  | 2012    | 25.0          |
+
+      | #SampleID | BarcodeSequence | Treatment   | Group       | Year    | Concentration |
+      |-----------|-----------------|-------------|-------------|---------|---------------|
+      | #q2:types | categorical     | categorical | categorical | numeric | numeric       |
+      | SAMPLE_A  | CAGTGTCA        | Cont_A      | Control     | 2010    | 20.0          |
+      | SAMPLE_B  | CATTGTCA        | Cont_A      | Experiment  | 2012    | 25.0          |
+
 3. Validación del archivo de metadatos:
     ~~~
     qiime tools inspect-metadata metadata.tsv
