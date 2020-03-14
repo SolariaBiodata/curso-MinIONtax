@@ -90,6 +90,11 @@ Realizaremos un análisis taxonómico utilizando el software de Qiime2
     ~~~
     nano manifest.csv
     ~~~
+      |sample-id|absolute-filepath|direction  |
+      |---------|-----------------|-----------|
+      |SAMPLE_A |$PWD/raw/samplA.fastq|forward|
+      |SAMPLE_B |$PWD/raw/samplB.fastq|forward|
+
 2. Una vez generado el archivo, cargaremos las secuencias con:
     ~~~
     qiime tools import --type 'SampleData[SequencesWithQuality]' \
